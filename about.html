@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jellee" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Jollibee</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body{
+        background-image: url(assets/svc1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .sub{ color: #aaaaaa; }
+    </style>
+  </head>
+  <body>   
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="a container-fluid">
+        <div class="col-1"></div>
+        <a class="col text-center" href="#"><img src="assets/jabi_logo.png" height="48px" width="48px"></a>
+        <div class="col-1 text-end"><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <div class="navbar-toggler-icon"></div>
+        </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/jabi_text.png" height="48px" width="144px"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="inside text-center" id="pop2" style="position:absolute;"></div>
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" id="fran2" onclick="click3()" role="button">Franchising</a></li>
+              <li class="nav-item"><a class="nav-link" id="contact2" onclick="click4()" role="button">Contacts</a></li>
+              <li class="nav-item"><a class="nav-link" id="cart2" onclick="click6()" role="button">My Cart</a></li>
+            </ul>
+            <footer style="position:fixed; top:95%;">This website is for educational purposes only.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="b container-fluid">
+        <div class="col-1"><img src="assets/jabi_text.png" height="48px" width="144px"></div>
+        <div class="col text-end">
+          <ul>
+            <li><a href="index.html" class="btn">Home</a></li>
+            <li><a href="menu.html" class="btn">Menu</a></li>
+            <li><a href="about.html" class="btn">About</a></li>
+            <li><a class="btn" id="fran1" onclick="click1()">Franchising</a></li>
+            <li><a class="btn" id="contact1" onclick="click2()">Contacts</a></li>
+            <li><a class="btn" id="cart1" onclick="click5()">My Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="outside text-center" id="pop1" style="position:absolute; z-index: 3;"></div>
+    </nav>
+
+
+    <!--content here-->
+    <div class="container-fluid text-center text-white">
+      <p style="margin-top:40%; font-size:400%; text-shadow: 0 5px 0 #000;">Burgers Like No Other</p>
+      <p style="margin-top:10%;">Jollibee is one of the long standing fast-food chains in the Philippines. It has also spread its joy all over the world, from Asia to America, spanning over 1400 branches overall. Starting all the way back to the 70s, Jollibee transitioned from being originally a burger-only store to selling other items, primarily fried chicken. Since then it has opened more and more branches over the years to make it into what it is today.</p>
+      <h3 style="margin-top:15%;">Want to be part of our team?</h3>
+      <p class="sub">Get in touch with our franchising team for more information</p>
+      <button class="btn btn-outline-light" id="fran1" onclick="click1()">Franchising</button>
+      <h3 style="margin-top:5%;">Need help with your orders? Want to throw a party with us?</h3>
+      <p class="sub">Contact our helpful customer support team</p>
+      <button class="btn btn-outline-light" id="contact1" onclick="click2()">Support</button>
+    </div>
+
+
+    <footer class="footer container-fluid text-center">
+      <ul>
+        <li><a href="index.html" class="btn text-white">Home</a></li>
+        <li><a href="menu.html" class="btn text-white">Menu</a></li>
+        <li><a href="about.html" class="btn text-white">About</a></li>
+        <li><a class="btn text-white" id="fran1" onclick="click1()">Franchising</a></li>
+        <li><a class="btn text-white" id="contact1" onclick="click2()">Contacts</a></li>
+      </ul>
+      <p class="text-white">This website is for educational purposes only.</p>
+    </footer>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
